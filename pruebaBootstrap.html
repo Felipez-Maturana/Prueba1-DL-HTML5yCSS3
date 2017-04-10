@@ -11,6 +11,29 @@ any other head content must come *after* these tags -->
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <style>
 
+	nav
+	{
+		position: fixed;
+		width: 100%;
+		top: 0;
+		text-align: center;
+		z-index: 2;
+	}
+	nav p
+	{
+
+		display: inline-block;
+		list-style-type: none;
+		padding: 1%;
+		color: lightcoral;
+		background-color: lightblue;	
+	}
+
+	.columnasCompra
+	{
+		padding-top: 5%;
+	}
+
 	.contenido
 	{
 		border: 1px black solid;
@@ -22,7 +45,7 @@ any other head content must come *after* these tags -->
 	{
 		width: 100%;
 	}
-	.contenido button span
+	.contenido>button>span
 	{
 		color: red;
 	}
@@ -46,7 +69,7 @@ any other head content must come *after* these tags -->
 
 	}
 	
-	div.container > .col-sm-4 > .contenido > .imagenTexto:hover 
+	div.columnasCompra > .col-sm-4 > .contenido > .imagenTexto:hover 
 	{
 		transform: scale(1.2,1.2); 
 	}
@@ -54,21 +77,32 @@ any other head content must come *after* these tags -->
 	div.container > .col-sm-4 > .contenido > .imagenTexto:hover .descripcion
 	{
 		visibility: visible;
-
 	}
+
+
+	.imagen-articulo
+	{
+		/* se realiza un float left para que se pueda escribir texto al rededor de la imagen */
+		float: left;
+		padding-right: 1%;
+		padding-bottom: 1%;
+	}
+
 
 </style>
 </head>
 <body>
 
-	
-<div class="container">
-	
+<nav>
+	<p>Tengo position fixed</p>
+</nav>
+
+<div class="columnasCompra container">
 	<div class="col-sm-4">	
 		<div class="contenido">
 			<div class="imagenTexto">
 				<img src="http://lorempixel.com/800/400/" alt="">
-				<div class="descripcion">Descripción lorem</div>
+				<div class="descripcion">Descripción</div>
 			</div>
 			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
 			<button class="btn btn-default center-block">
@@ -102,8 +136,19 @@ any other head content must come *after* these tags -->
 </div>
 
 
+<!-- SE OCUPARAN MENOS COLUMNAS DE LAS NECESARIAS PAR -->
 
+<div class="columnaOpinion container">
+	<div class="burger">
+		<div class="texto">
+			<h1>Hamburguesa!</h1>
+			
+			<img src="http://lorempixel.com/600/400/" alt="" class="imagen-articulo img-responsive">
 
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor suscipit impedit ullam ratione iure, soluta voluptate sint adipisci veniam quisquam beatae laborum fugit blanditiis eligendi voluptatibus labore at ipsam? lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sequi, repellat expedita sapiente debitis adipisci illum, similique ab blanditiis voluptate ducimus enim ea, eligendi, provident voluptatum consequuntur ipsam accusamus quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores unde animi doloribus libero, nulla eligendi minima est, enim, dolor distinctio aperiam? Cupiditate quia soluta, iusto officia consequuntur, expedita quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia nisi sint assumenda vero ut deleniti, corporis aliquam cupiditate dolorem natus ea quibusdam dolorum, voluptatum fuga consequuntur fugit tenetur esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt omnis voluptate voluptatem maxime modi consequuntur minima, veritatis impedit nisi consequatur dicta sapiente eius labore vitae tenetur, sequi quas illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda optio, quod dolor aut. Aperiam perspiciatis, maxime eius asperiores dolorem doloremque ad aut, fuga magnam optio sint provident, fugiat maiores non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nesciunt laborum a, quod, hic rem corporis placeat repellat modi similique necessitatibus! Distinctio ex, ullam. Hic architecto accusantium dignissimos sapiente fugit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet ipsum accusamus eos mollitia culpa atque veniam ipsam labore pariatur, aspernatur 	aperiam doloribus dicta vitae fugiat quisquam suscipit distinctio explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatem quis deserunt, beatae accusantium non unde fuga accusamus. Distinctio placeat eius error vitae sed minus quis, earum consequatur facere maxime! </p>
+		</div>
+	</div>
+</div>
 
 
 
