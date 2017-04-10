@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head;
+any other head content must come *after* these tags -->
+<title>Prueba 1 - HTML5 y CSS3</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<style>
+
+	.contenido
+	{
+		border: 1px black solid;
+		padding: 5px;
+
+	}
+
+	.contenido img
+	{
+		width: 100%;
+	}
+	.contenido button span
+	{
+		color: red;
+	}
+
+
+	.imagenTexto
+	{
+		position: relative;
+		transition: all 1s ease-in-out;
+	}
+	.descripcion
+	{
+		/* visibility: hidden; */
+		background-color: rgba(255,0,0,0.5);
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		color: violet;
+		text-align: center;
+
+
+	}
+	
+	div.container > .col-sm-4 > .contenido > .imagenTexto:hover 
+	{
+		transform: scale(1.2,1.2); 
+	}
+
+	div.container > .col-sm-4 > .contenido > .imagenTexto:hover .descripcion
+	{
+		visibility: visible;
+
+	}
+
+</style>
+</head>
+<body>
+
+	
+<div class="container">
+	
+	<div class="col-sm-4">	
+		<div class="contenido">
+			<div class="imagenTexto">
+				<img src="http://lorempixel.com/800/400/" alt="">
+				<div class="descripcion">Descripción lorem</div>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
+			<button class="btn btn-default center-block">
+				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
+			</button>
+		</div>
+	</div>
+	<div class="col-sm-4">	
+		<div class="contenido">
+			<div class="imagenTexto">
+				<img src="http://lorempixel.com/800/400/" alt="">
+				<div class="descripcion">Descripción</div>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
+			<button class="btn btn-default center-block">
+				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
+			</button>
+		</div>
+	</div><div class="col-sm-4">	
+		<div class="contenido">
+			<div class="imagenTexto">
+				<img src="http://lorempixel.com/800/400/" alt="">
+				<div class="descripcion">Descripción</div>
+			</div>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
+			<button class="btn btn-default center-block">
+				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
+			</button>
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
+
+<!-- Include all compiled plugins (below),
+or include individual files as needed -->
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
