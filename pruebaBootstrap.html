@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+
 <!-- The above 3 meta tags *must* come first in the head;
 any other head content must come *after* these tags -->
 <title>Prueba 1 - HTML5 y CSS3</title>
@@ -33,66 +34,12 @@ any other head content must come *after* these tags -->
 		background-color: lightblue;	
 	}
 
-	.columnasCompra
-	{
-		padding-top: 5%;
-	}
 
-	.contenido
-	{
-		border: 1px black solid;
-		padding: 5px;
-
-	}
-
-	.contenido img
-	{
-		width: 100%;
-	}
-	.contenido>button>span
-	{
-		color: red;
-	}
-
-
-	.imagenTexto
-	{
-		position: relative;
-		transition: all 1s ease-in-out;
-	}
-	.descripcion
-	{
-		background-color: rgba(255,0,0,0.5);
-		position: absolute;
-		width: 100%;
-		bottom: 0;
-		color: violet;
-		text-align: center;
-	}
 	
-	div.columnasCompra > .col-sm-4 > .contenido > .imagenTexto:hover 
+	
+	.fotoHacker:hover 
 	{
 		transform: scale(1.2,1.2); 
-	}
-
-	div.container > .col-sm-4 > .contenido > .imagenTexto:hover .descripcion
-	{
-		visibility: visible;
-	}
-
-
-	.imagen-articulo
-	{
-		/* se realiza un float left para que se pueda escribir texto al rededor de la imagen */
-		float: left;
-		padding-right: 1%;
-		padding-bottom: 1%;
-	}
-
-	
-	.textoColumnasGrilla
-	{
-		text-align: justify;
 	}
 
 
@@ -163,7 +110,21 @@ any other head content must come *after* these tags -->
 	.fotoHacker
 	{
 		border: 1px solid black;
+		position: relative;
+		transition: all 1s ease-in-out;
+
 	}
+	.descripcionHacker
+	{
+		background-color: rgba(255,0,0,0.5);
+		position: absolute;
+		width: 92%;
+		/* right: 50%; */
+		top: 0;
+		color: violet;
+		text-align: center;
+	}
+
 	.descripcion-Hacker
 	{
 		border: 1px solid black;
@@ -196,7 +157,11 @@ any other head content must come *after* these tags -->
 		padding-top: 4%;
 		text-align: center;
 	}
-
+	.center
+	{
+		display: block;
+		padding: 5%;
+	}
 </style>
 </head>
 <body>
@@ -223,12 +188,14 @@ any other head content must come *after* these tags -->
 
 <div class="segundoMenu">
 	<div class="container">
-		<h1 class="tituloSegundoMenu">
-			¿Aburrido de hacer campañas de Marketing poco exitosas?
-		</h1>
-		<h2 class="subtituloSegundoMenu">
-			Pon creatividad en tu negocio y con poco dinero empieza a multiplicar tus ingresos. Aprende como trabajar con PNL en tu negocio y hacer hacks para conseguir más clientes.
-		</h2>
+		<div class="center">
+			<h1 class="tituloSegundoMenu">
+				¿Aburrido de hacer campañas de Marketing poco exitosas?
+			</h1>
+			<h2 class="subtituloSegundoMenu">
+				Pon creatividad en tu negocio y con poco dinero empieza a multiplicar tus ingresos. Aprende como trabajar con PNL en tu negocio y hacer hacks para conseguir más clientes.
+			</h2>
+		</div>
 	</div>
 </div>
 
@@ -299,11 +266,13 @@ any other head content must come *after* these tags -->
 	
 		<div class="fotoHacker col-sm-4 col-sm-offset-2">
 			<img src="http://lorempixel.com/400/400/" alt="" class="img-responsive">
+			<p class="descripcionHacker">Hola soy un hacker</p>
+
 		</div>
 
 		<div class="col-sm-4">
 			<div class="descripcion-Hacker">
-				<h1>Lorem</h1>
+				<h1>Juanito Pérez</h1>
 				<h3>Growth Hacker</h3>
 				<p>Emprendedor social y filántropo, soy un pensador innovador que tiene la capacidad de influir en los demás y generar entusiasmo por ideas a lo largo de organizaciones a través del Branding, ads y marketing para el desarrollo de negocios y servicio al cliente en todas las etapas (B2B2C).</p>
 				<p>Durante los últimos 16 años, he estado trabajando en la industria de Internet como freelance y consultor. Me encanta big data driven y el diseño centrado en producto y el growth marketing. Disfruto trabajar con nuevas empresas de tecnología que se esfuerzan por resolver los problemas relevantes. Siempre abierto a ayudar a startups en fase inicial para aumentar su tracción de maneras creativas y a bajo costo, de manera de generarles un crecimiento exponencial.</p>
@@ -327,75 +296,6 @@ any other head content must come *after* these tags -->
 		<div class="col-md-4">Nueva Providencia 1363, oficina 201, Providencia, Santiago</div>
 	</div>
 </footer>
-
-<!-- 
-
-
-<div class="columnasCompra container">
-	<div class="col-sm-4">	
-		<div class="contenido">
-			<div class="imagenTexto">
-				<img src="http://lorempixel.com/800/400/" alt="">
-				<div class="descripcion">Descripción</div>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
-			<button class="btn btn-default center-block">
-				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
-			</button>
-		</div>
-	</div>
-	<div class="col-sm-4">	
-		<div class="contenido">
-			<div class="imagenTexto">
-				<img src="http://lorempixel.com/800/400/" alt="">
-				<div class="descripcion">Descripción</div>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
-			<button class="btn btn-default center-block">
-				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
-			</button>
-		</div>
-	</div><div class="col-sm-4">	
-		<div class="contenido">
-			<div class="imagenTexto">
-				<img src="http://lorempixel.com/800/400/" alt="">
-				<div class="descripcion">Descripción</div>
-			</div>
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus nulla aut laudantium sapiente animi ab ut, dolorum similique laboriosam itaque dolor perferendis. Nobis facilis saepe, perspiciatis quis officia nam quaerat.Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus earum quo voluptatem explicabo, iusto neque provident eligendi quos debitis minus molestias commodi enim voluptas perspiciatis. Ipsam laborum in debitis cum.</p>
-			<button class="btn btn-default center-block">
-				<span class="glyphicon glyphicon-star" aria-hidden="true"> </span> Comprar
-			</button>
-		</div>
-	</div>
-</div>
-
-
-
-<div class="columnaOpinion container">
-	<div class="burger">
-		<div class="texto">
-			<h1>Columna de Opinion!</h1>
-
-			<div class="imagenColumna">
-				<img src="http://lorempixel.com/600/400/" alt="" class="imagen-articulo img-responsive">
-				<p class="descripcionImagenColumna">Hola soy una descripcion, justifico que puedo escribir sobre una imagen de fondo</p>
-			</div>
-			
-			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. In dolor suscipit impedit ullam ratione iure, soluta voluptate sint adipisci veniam quisquam beatae laborum fugit blanditiis eligendi voluptatibus labore at ipsam? lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia sequi, repellat expedita sapiente debitis adipisci illum, similique ab blanditiis voluptate ducimus enim ea, eligendi, provident voluptatum consequuntur ipsam accusamus quisquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis asperiores unde animi doloribus libero, nulla eligendi minima est, enim, dolor distinctio aperiam? Cupiditate quia soluta, iusto officia consequuntur, expedita quidem. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae quia nisi sint assumenda vero ut deleniti, corporis aliquam cupiditate dolorem natus ea quibusdam dolorum, voluptatum fuga consequuntur fugit tenetur esse. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Recusandae sunt omnis voluptate voluptatem maxime modi consequuntur minima, veritatis impedit nisi consequatur dicta sapiente eius labore vitae tenetur, sequi quas illo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda optio, quod dolor aut. Aperiam perspiciatis, maxime eius asperiores dolorem doloremque ad aut, fuga magnam optio sint provident, fugiat maiores non. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga nesciunt laborum a, quod, hic rem corporis placeat repellat modi similique necessitatibus! Distinctio ex, ullam. Hic architecto accusantium dignissimos sapiente fugit!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum eveniet ipsum accusamus eos mollitia culpa atque veniam ipsam labore pariatur, aspernatur 	aperiam doloribus dicta vitae fugiat quisquam suscipit distinctio explicabo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit voluptatem quis deserunt, beatae accusantium non unde fuga accusamus. Distinctio placeat eius error vitae sed minus quis, earum consequatur facere maxime! </p>
-		</div>
-	</div>
-</div>
-
-
-<div class="container">
-	<h1>JUSTIFICANDO EL USO DE GRILLAS (NUEVAMENTE)</h1>
-	<div class="textoColumnasGrilla col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit modi veritatis, repellat, ea laudantium in. Repudiandae ab molestiae voluptates dolor neque! Inventore dignissimos qui reiciendis dolores consequuntur ipsa, tempora asperiores! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti suscipit voluptates quae nisi adipisci sint sapiente quis beatae totam quidem vitae asperiores veniam architecto sit, dolor maxime, blanditiis, accusamus. Ab. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque et, ipsum, dolor ab aliquid qui distinctio quia quo minima rerum neque atque doloremque, tenetur cum commodi officia pariatur consequuntur esse?</div>
-	<div class="textoColumnasGrilla col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi suscipit vitae dolores molestias nostrum, consequatur pariatur voluptas maxime necessitatibus amet id enim eveniet eligendi sunt, a error. Minima porro, odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia, vel natus repellat temporibus, placeat quos voluptas labore nisi mollitia tenetur cum tempora eveniet a esse inventore fuga nesciunt, quidem obcaecati. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati in sequi quia vero quaerat unde, aspernatur harum dolorum. Quod autem facere provident nemo, nisi ea itaque est vel omnis. Veniam?</div>
-	<div class="textoColumnasGrilla col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit odio, dolores. Illum atque at rem corrupti, nemo animi quasi quia vel hic velit. Recusandae adipisci velit ea, quidem accusantium accusamus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Et accusamus ipsum dolorum ab dolor nemo officiis voluptatibus a cumque autem optio perferendis, reiciendis veritatis quidem sit architecto. Asperiores delectus, a. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima velit, inventore ex quas. Doloribus laudantium optio sapiente nemo est tenetur quae facere ea. Impedit voluptatum commodi nemo rerum maxime pariatur.</div>
-	<div class="textoColumnasGrilla col-sm-3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Expedita inventore aut soluta iure dolorum culpa eaque necessitatibus maiores possimus at recusandae error, eius, voluptatum illo excepturi quo incidunt totam nemo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto delectus ducimus quaerat fugiat, veritatis totam ex dignissimos. Tempore facere, officia pariatur, accusamus neque doloribus, vel error sint cupiditate ut, ducimus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia reiciendis exercitationem voluptas soluta accusamus architecto possimus, placeat dolorum explicabo, perferendis, dolor vel quos vitae, praesentium quis delectus. Quisquam, sequi quaerat.</div>
-</div>
-
- -->
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"> </script>
 
